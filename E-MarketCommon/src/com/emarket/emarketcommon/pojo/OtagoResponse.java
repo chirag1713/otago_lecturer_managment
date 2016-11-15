@@ -1,6 +1,6 @@
 package com.emarket.emarketcommon.pojo;
 
-public class EMarketResponse {
+public class OtagoResponse {
     public static int STATUS_SUCCESS = 1;
     public static int STATUS_ERROR = 2;
     public static int STATUS_WARNING = 3;
