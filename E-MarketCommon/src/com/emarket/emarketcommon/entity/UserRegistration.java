@@ -7,7 +7,21 @@ import javax.persistence.Id;
 
 @Entity
 public class UserRegistration {
- 
+    @Id
+    @GeneratedValue
+    @Column(name = "id", length = 11)
+    private int id;
+
+    @Column(name = "username", length = 30)
+    private String userName;
+
+    @Column(name = "emailid", length = 50)
+    private String emailId;
+
+    @Column(name = "password", length = 20)
+    private String passord;
+
+    @Column(name = "mobile", length = 10)
     private String mobile;
 
     public int getId() {
