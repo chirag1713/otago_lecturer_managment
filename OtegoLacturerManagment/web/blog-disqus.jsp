@@ -1,0 +1,219 @@
+<?php include_once 'header.php'; ?>
+
+<!-- Being Page Title -->
+<div class="container">
+    <div class="page-title clearfix">
+        <div class="row">
+            <div class="col-md-12">
+                <h6><a href="index.php">Home</a></h6>
+                <h6><a href="blog.php">Blog</a></h6>
+                <h6><span class="page-active">Theatre Production Selected for Regional Festival</span></h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+
+        <!-- Here begin Main Content -->
+        <div class="col-md-8">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="blog-post-container">
+                        <div class="blog-post-image">
+                            <img src="images/blog/blog-image.jpg" alt="">
+                            <div class="blog-post-meta">
+                                <ul>
+                                    <li><i class="fa fa-calendar-o"></i>24/01/2014</li>
+                                    <li><a href="#blog-comments"><i class="fa fa-comments"></i>3 comments</a></li>
+                                    <li><a href="#blog-author"><i class="fa fa-user"></i>Esmet Hajrizi</a></li>
+                                </ul>
+                            </div> <!-- /.blog-post-meta -->
+                        </div> <!-- /.blog-post-image -->
+                        <div class="blog-post-inner">
+                            <h3 class="blog-post-title">Theatre Production Selected for Regional Festival</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quis, itaque culpa rem excepturi cum sunt quae obcaecati corrupti fugiat facere error eos necessitatibus iure ut voluptates dolor enim provident!</p>
+                            <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, perspiciatis, ad, pariatur placeat facere laborum aspernatur quidem sint illum eos mollitia repellendus consectetur obcaecati possimus cupiditate delectus dolores eaque blanditiis?</strong></p>
+                            <p>
+                            <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, cum, quos ipsam eligendi accusantium quo amet quae commodi obcaecati nobis ratione soluta. Voluptates, obcaecati consectetur officia saepe rerum animi doloremque!</blockquote>
+                            </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, magni, blanditiis, excepturi accusantium fugiat enim accusamus non libero doloribus doloremque illo error perferendis sequi dignissimos nesciunt voluptates nulla voluptatibus optio.</p>
+                            <div class="tag-items">
+                                <span class="small-text">Tags:</span>
+                                <a href="#" rel="tag">business</a>
+                                <a href="#" rel="tag">html</a>
+                                <a href="#" rel="tag">education</a>
+                            </div>
+                        </div>
+                    </div> <!-- /.blog-post-container -->
+                </div> <!-- /.col-md-12 -->
+            </div> <!-- /.row -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="prev-next-post clearfix">
+                        <span class="whiteBtn">
+                            <a href="#" class="prev"><i class="fa fa-angle-left"></i>Older Post</a>
+                        </span>
+                        <span class="whiteBtn">
+                            <a href="#" class="next">Newer Post<i class="fa fa-angle-right"></i></a>
+                        </span>
+                    </div>
+                </div> <!-- /.col-md-12 -->
+            </div> <!-- /.row -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="blog-author" class="clearfix">
+                        <a href="#" class="blog-author-img">
+                            <img src="images/blog/author.jpg" alt="">
+                        </a>
+                        <div class="blog-author-info">
+                            <h4 class="author-name"><a href="#">Clyde Duarte</a></h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quod, doloremque, quia cum maiores commodi consequatur dolore et dolores omnis officiis minus dolor ex quae incidunt veritatis.</p>
+                        </div>
+                    </div> <!-- /.blog-author -->
+                </div> <!-- /.col-md-12 -->
+            </div> <!-- /.row -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                        var disqus_shortname = 'esmeth'; // required: replace example with your forum shortname
+
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                            var dsq = document.createElement('script');
+                            dsq.type = 'text/javascript';
+                            dsq.async = true;
+                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                    <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div> <!-- /.col-md-12 -->
+            </div> <!-- /.row -->
+
+        </div> <!-- /.col-md-8 -->
+
+        <!-- Here begin Sidebar -->
+        <div class="col-md-4">
+
+            <div class="widget-main">
+                <div class="widget-inner">
+                    <div class="search-form-widget">
+                        <form name="search_form" method="get" action="#" class="search_form">
+                            <input type="text" name="s" placeholder="Type and click enter to search..." title="Type and click enter to search..." class="field_search">
+                        </form>
+                    </div>
+                </div> <!-- /.widget-inner -->
+            </div> <!-- /.widget-main -->
+
+            <div class="widget-main">
+                <div class="widget-main-title">
+                    <h4 class="widget-title">Categories</h4>
+                </div>
+                <div class="widget-inner">
+                    <div class="blog-categories">
+                        <div class="row">
+                            <ul class="col-md-6">
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Famliy</a></li>
+                                <li><a href="#">Government</a></li>
+                                <li><a href="#">Health</a></li>
+                            </ul>
+                            <ul class="col-md-6">
+                                <li><a href="#">Science</a></li>
+                                <li><a href="#">Student Achievements</a></li>
+                                <li><a href="#">Tech & Engineering</a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- /.blog-categories -->
+                </div> <!-- /.widget-inner -->
+            </div> <!-- /.widget-main -->
+
+            <div class="widget-main">
+                <div class="widget-main-title">
+                    <h4 class="widget-title">Our Gallery</h4>
+                </div>
+                <div class="widget-inner">
+                    <div class="gallery-small-thumbs clearfix">
+                        <div class="thumb-small-gallery">
+                            <a class="fancybox" rel="gallery1" href="images/gallery/gallery1.jpg" title="Gallery Tittle One">
+                                <img src="images/gallery/gallery-small-thumb1.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="thumb-small-gallery">
+                            <a class="fancybox" rel="gallery1" href="images/gallery/gallery2.jpg" title="Gallery Tittle One">
+                                <img src="images/gallery/gallery-small-thumb2.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="thumb-small-gallery">
+                            <a class="fancybox" rel="gallery1" href="images/gallery/gallery3.jpg" title="Gallery Tittle One">
+                                <img src="images/gallery/gallery-small-thumb3.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="thumb-small-gallery">
+                            <a class="fancybox" rel="gallery1" href="images/gallery/gallery4.jpg" title="Gallery Tittle One">
+                                <img src="images/gallery/gallery-small-thumb4.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="thumb-small-gallery">
+                            <a class="fancybox" rel="gallery1" href="images/gallery/gallery5.jpg" title="Gallery Tittle One">
+                                <img src="images/gallery/gallery-small-thumb5.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="thumb-small-gallery">
+                            <a class="fancybox" rel="gallery1" href="images/gallery/gallery6.jpg" title="Gallery Tittle One">
+                                <img src="images/gallery/gallery-small-thumb6.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="thumb-small-gallery">
+                            <a class="fancybox" rel="gallery1" href="images/gallery/gallery7.jpg" title="Gallery Tittle One">
+                                <img src="images/gallery/gallery-small-thumb7.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="thumb-small-gallery">
+                            <a class="fancybox" rel="gallery1" href="images/gallery/gallery8.jpg" title="Gallery Tittle One">
+                                <img src="images/gallery/gallery-small-thumb8.jpg" alt="" />
+                            </a>
+                        </div>
+                    </div> <!-- /.galler-small-thumbs -->
+                </div> <!-- /.widget-inner -->
+            </div> <!-- /.widget-main -->
+
+            <div class="widget-main">
+                <div class="widget-main-title">
+                    <h4 class="widget-title">Testimonial</h4>
+                </div>
+                <div class="widget-inner">
+                    <div id="slider-testimonials">
+                        <ul>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quos, veniam optio voluptas hic delectus soluta odit nemo harum <strong class="dark-text">Shannon D. Edwards</strong></p>
+                            </li>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quos, veniam optio voluptas hic delectus soluta odit nemo harum <strong class="dark-text">Shannon D. Edwards</strong></p>
+                            </li>
+                            <li>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, quos, veniam optio voluptas hic delectus soluta odit nemo harum <strong class="dark-text">Shannon D. Edwards</strong></p>
+                            </li>
+                        </ul>
+                        <a class="prev fa fa-angle-left" href="#"></a>
+                        <a class="next fa fa-angle-right" href="#"></a>
+                    </div>
+                </div> <!-- /.widget-inner -->
+            </div> <!-- /.widget-main -->
+
+        </div> <!-- /.col-md-4 -->
+
+    </div> <!-- /.row -->
+</div> <!-- /.container -->
+
+<?php include_once 'footer.php'; ?>
