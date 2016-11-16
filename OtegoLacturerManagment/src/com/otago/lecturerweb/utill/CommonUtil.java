@@ -1,4 +1,4 @@
-package com.otago.lecturercommon.utill;
+package com.otago.lecturerweb.utill;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;

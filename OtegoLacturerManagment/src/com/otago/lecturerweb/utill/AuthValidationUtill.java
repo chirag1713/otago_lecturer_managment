@@ -1,4 +1,4 @@
-package com.otago.lecturercommon.utill;
+package com.otago.lecturerweb.utill;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,18 +6,16 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.otago.lecturercommon.Dao.AuthDao;
 import com.otago.lecturercommon.entity.AuthUser;
 import com.otago.lecturercommon.entity.Status;
 import com.otago.lecturercommon.entity.User;
-import com.otago.lecturercommon.pojo.Constants;
+import com.otago.lecturerweb.Dao.AuthDao;
 
 @Service
 public class AuthValidationUtill {

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.otago.lecturercommon.utill;
+package com.otago.lecturerweb.utill;
 
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
@@ -22,10 +22,13 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *
  * @author Chandresh
  */
-public class XMLGregorianCalendarGsonSerializer implements JsonDeserializer<XMLGregorianCalendar>, JsonSerializer<XMLGregorianCalendar> {
+public class XMLGregorianCalendarGsonSerializer implements
+		JsonDeserializer<XMLGregorianCalendar>,
+		JsonSerializer<XMLGregorianCalendar> {
 
 	@Override
-	public XMLGregorianCalendar deserialize(JsonElement json, Type type, JsonDeserializationContext context) throws JsonParseException {
+	public XMLGregorianCalendar deserialize(JsonElement json, Type type,
+			JsonDeserializationContext context) throws JsonParseException {
 		String value = json.getAsString();
 		XMLGregorianCalendar calendar = null;
 		try {
@@ -33,7 +36,8 @@ public class XMLGregorianCalendarGsonSerializer implements JsonDeserializer<XMLG
 			Date date = sdf.parse(value);
 			GregorianCalendar gregorianCalendar = new GregorianCalendar();
 			gregorianCalendar.setTime(date);
-			calendar = DatatypeFactory.newInstance().newXMLGregorianCalendar(gregorianCalendar);
+			calendar = DatatypeFactory.newInstance().newXMLGregorianCalendar(
+					gregorianCalendar);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -41,7 +45,8 @@ public class XMLGregorianCalendarGsonSerializer implements JsonDeserializer<XMLG
 	}
 
 	@Override
-	public JsonElement serialize(XMLGregorianCalendar src, Type typeOfSrc, JsonSerializationContext context) {
+	public JsonElement serialize(XMLGregorianCalendar src, Type typeOfSrc,
+			JsonSerializationContext context) {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 		Date time = src.toGregorianCalendar().getTime();
 		return context.serialize(sdf.format(time));

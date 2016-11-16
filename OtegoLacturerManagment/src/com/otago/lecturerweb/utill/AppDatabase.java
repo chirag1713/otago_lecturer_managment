@@ -1,4 +1,4 @@
-package com.otago.lecturercommon.utill;
+package com.otago.lecturerweb.utill;
 
 
 public class AppDatabase {

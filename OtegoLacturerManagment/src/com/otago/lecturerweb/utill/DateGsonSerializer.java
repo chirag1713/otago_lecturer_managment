@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.otago.lecturercommon.utill;
+package com.otago.lecturerweb.utill;
 
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
