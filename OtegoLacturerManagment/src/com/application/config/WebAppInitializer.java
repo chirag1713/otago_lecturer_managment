@@ -54,11 +54,11 @@ public class WebAppInitializer implements WebApplicationInitializer {
             System.out.println("*****Initializing Web Application context TheaterWeb");
             applicationContext = new AnnotationConfigWebApplicationContext();
             ((AnnotationConfigRegistry) applicationContext).register(AppConfig.class);
-        } /*else {
+        } else {
             System.out.println("*****Initializing Local Application context TheaterWeb");
             applicationContext = new AnnotationConfigApplicationContext();
             ((AnnotationConfigRegistry) applicationContext).register(AppConfigLocal.class);
-          }*/
+        }
     }
 
     public static ApplicationContext getApplicationContext() {
