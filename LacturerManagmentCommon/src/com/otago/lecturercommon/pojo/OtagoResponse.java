@@ -10,6 +10,11 @@ public class OtagoResponse {
     private String MESSAGE;
     private Object DATA;
 
+    public OtagoResponse() {
+        setSTATUS(STATUS_ERROR);
+        setMESSAGE("OOps, we have encountered an error. Please try again later.");
+    }
+
     public Integer getSTATUS() {
         return STATUS;
     }
