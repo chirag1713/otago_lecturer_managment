@@ -1,4 +1,4 @@
-package com.otago.lecturercommon.Dao;
+package com.otago.lecturerweb.Dao;
 
 import java.util.List;
 
