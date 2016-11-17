@@ -87,7 +87,7 @@ public class AuthController {
                 throw new Exception("Invalid Password.");
             }
 
-          //  boolean emailActive = (Boolean) dataMap.get("emailActive");
+            //  boolean emailActive = (Boolean) dataMap.get("emailActive");
             // create user in system
             User user = authDao.createNormalUser(email, mobile, fullName, password);
             if (user == null || user.getId() == 0) {
