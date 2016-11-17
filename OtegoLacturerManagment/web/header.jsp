@@ -17,25 +17,31 @@
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
 
         <!-- CSS Bootstrap & Custom -->
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
-        <link href="css/animate.css" rel="stylesheet" media="screen">
-        <link href="css/selectize/selectize.legacy.css" rel="stylesheet" media="screen">
+        <link href="${pageContext.request.contextPath}/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="${pageContext.request.contextPath}/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="${pageContext.request.contextPath}/css/font-awesome.min.css" rel="stylesheet" media="screen">
+        <link href="${pageContext.request.contextPath}/css/animate.css" rel="stylesheet" media="screen">
+        <link href="${pageContext.request.contextPath}/css/selectize/selectize.legacy.css" rel="stylesheet" media="screen">
 
-        <link href="style.css" rel="stylesheet" media="screen">
+        <link href="${pageContext.request.contextPath}/style.css" rel="stylesheet" media="screen">
 
         <!-- Favicons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-        <link rel="shortcut icon" href="images/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="${pageContext.request.contextPath}/images/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="${pageContext.request.contextPath}/images/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="${pageContext.request.contextPath}/images/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="${pageContext.request.contextPath}/images/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="${pageContext.request.contextPath}/images/ico/favicon.ico">
 
         <!-- JavaScripts -->
-        <script src="js/jquery-1.10.2.min.js"></script>
-        <script src="js/jquery-migrate-1.2.1.min.js"></script>
-        <script src="js/modernizr.js"></script>
+        <script src="${pageContext.request.contextPath}/js/jquery-1.10.2.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="${pageContext.request.contextPath}/js/modernizr.js"></script>
+                        <script src="js/main.js"></script>
+                <script src="${pageContext.request.contextPath}/js/commonFunction.js"></script>
+                                <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
+                                <script type="text/javascript">var baseUrl = '${pageContext.request.contextPath}/'</script>
+                
+        
         <!--[if lt IE 8]>
             <div style=' clear: both; text-align:center; position: relative;'>
                 <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
@@ -97,8 +103,8 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="logo pull-left" style="margin: 20px 0;">
-                            <a href="index.jsp" title="Universe" rel="home">
-                                <img src="images/logo.jpg" alt="Universe">
+                            <a href="${pageContext.request.contextPath}/" title="Universe" rel="home">
+                                <img src="${pageContext.request.contextPath}/images/logo.jpg" alt="Universe">
                             </a>
                         </div> <!-- /.logo -->
                     </div> <!-- /.col-md-4 -->
@@ -127,7 +133,7 @@
                 <div class="container">
                     <nav class="main-navigation clearfix visible-md visible-lg" role="navigation">
                         <ul class="main-menu sf-menu">
-                            <li class="active"><a href="index.jsp">Home</a></li>
+                            <li class="active"><a href="${pageContext.request.contextPath}/">Home</a></li>
 <!--                            <li><a href="#">Events</a>
                                 <ul class="sub-menu">
                                     <li><a href="events-grid.jsp">Events Grid</a></li>
@@ -135,12 +141,12 @@
                                     <li><a href="event-single.jsp">Events Details</a>
                                 </ul>
                             </li>-->
-                            <li><a href="#">Courses</a>
+                    <!--         <li><a href="#">Courses</a>
                                 <ul class="sub-menu">
                                     <li><a href="courses.jsp">Courses List</a></li>
-                                    <!--<li><a href="course-single.jsp">Course Single</a></li>-->
+                                    <li><a href="course-single.jsp">Course Single</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
 <!--                            <li><a href="#">Blog Entries</a>
                                 <ul class="sub-menu">
                                     <li><a href="blog.jsp">Blog Grid</a></li>
