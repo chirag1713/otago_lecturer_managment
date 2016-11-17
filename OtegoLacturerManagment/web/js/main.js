@@ -26,6 +26,7 @@
 //    });
 //}
 
+
 function jqueryAjax(url, param, callback) {    
 	jQuery.ajax({
         url: baseUrl + "/" + url,
