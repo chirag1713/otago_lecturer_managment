@@ -24,8 +24,11 @@ public class Course {
 	@JoinColumn(name = "programid")
 	private Program program;
 
-	@Column(name = "name", length = 40)
+	@Column(name = "name", length = 100)
 	private String name;
+
+	@Column(name = "active", length = 1)
+	private boolean active;
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "updatedon")
@@ -73,6 +76,14 @@ public class Course {
 
 	public void setCreatedOn(Date createdOn) {
 		this.createdOn = createdOn;
+	}
+
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
 	}
 
 }
