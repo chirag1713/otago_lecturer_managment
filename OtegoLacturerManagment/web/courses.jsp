@@ -36,7 +36,7 @@
 												<h4>${cur.course.program.name}</h4>
 												<ul class="list-links">
 										</c:if>											
-										<li><a data-toggle="modal" data-target="#myModal">${cur.course.name}</a></li>																				
+										<li><a href="getlearningoutcome/${cur.course.id}">${cur.course.name}</a></li>																				
 										<c:set var="tempPro">${cur.course.program.name}</c:set>
 									</c:forEach>									
 									<!-- 	<div
