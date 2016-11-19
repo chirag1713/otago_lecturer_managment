@@ -45,3 +45,16 @@ function initLogin() {
 	};
 	$("#btn-login").on("click", onLoginClick);
 }
+
+function showHideTab(){ 
+	 $("#tab2").hide();
+	    $("#tab1").show();
+	$("#items").click(function(){
+    $("#tab2").hide();
+    $("#tab1").show();
+});
+$("#capabilities").click(function(){
+    $("#tab1").hide();
+    $("#tab2").show();
+});
+}
