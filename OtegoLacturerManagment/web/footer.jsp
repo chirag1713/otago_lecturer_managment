@@ -85,10 +85,10 @@
 </footer> <!-- /.site-footer -->
 
 
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/slectsize/selectize.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/bootstrap/js/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/js/plugins.js"></script>
+<script src="${pageContext.request.contextPath}/js/custom.js"></script>
+<script src="${pageContext.request.contextPath}/js/slectsize/selectize.js" type="text/javascript"></script>
 
 </body>
 
