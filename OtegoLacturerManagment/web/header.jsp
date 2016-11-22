@@ -36,7 +36,7 @@
         <script src="${pageContext.request.contextPath}/js/jquery-1.10.2.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/jquery-migrate-1.2.1.min.js"></script>
         <script src="${pageContext.request.contextPath}/js/modernizr.js"></script>
-                        <script src="js/main.js"></script>
+                        <script src="${pageContext.request.contextPath}/js/main.js"></script>
                 <script src="${pageContext.request.contextPath}/js/commonFunction.js"></script>
                                 <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
                                 <script type="text/javascript">var baseUrl = '${pageContext.request.contextPath}/'</script>
@@ -133,7 +133,7 @@
                 <div class="container">
                     <nav class="main-navigation clearfix visible-md visible-lg" role="navigation">
                         <ul class="main-menu sf-menu">
-                            <li class="active"><a href="${pageContext.request.contextPath}/">Home</a></li>
+                            <li class="active"><a href="${pageContext.request.contextPath}/">Home </a></li>
 <!--                            <li><a href="#">Events</a>
                                 <ul class="sub-menu">
                                     <li><a href="events-grid.jsp">Events Grid</a></li>
