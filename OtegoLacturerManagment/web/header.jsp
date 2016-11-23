@@ -24,7 +24,7 @@
         <link href="${pageContext.request.contextPath}/css/selectize/selectize.legacy.css" rel="stylesheet" media="screen">
 
         <link href="${pageContext.request.contextPath}/style.css" rel="stylesheet" media="screen">
-
+<link href="${pageContext.request.contextPath}/main.css" rel="stylesheet" media="screen">
         <!-- Favicons -->
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="${pageContext.request.contextPath}/images/ico/apple-touch-icon-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="${pageContext.request.contextPath}/images/ico/apple-touch-icon-114-precomposed.png">

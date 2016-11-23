@@ -84,11 +84,19 @@
     </div> <!-- /.container -->
 </footer> <!-- /.site-footer -->
 
+<div class="messagePopUp modal fade in" role="dialog" id="msg_pop_up">
+    <div class="top"><i></i></div>
+    <h2>Success</h2>
+    <p>One fine body&hellip;</p>
+    <button type="button" class="btn btn-success btn-block" data-dismiss="modal">Ok</button>
+</div>
 
 <script src="${pageContext.request.contextPath}/bootstrap/js/bootstrap.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/plugins.js"></script>
 <script src="${pageContext.request.contextPath}/js/custom.js"></script>
 <script src="${pageContext.request.contextPath}/js/slectsize/selectize.js" type="text/javascript"></script>
+<script src="${pageContext.request.contextPath}/js/commonFunction.js"></script>
+
 
 </body>
 
