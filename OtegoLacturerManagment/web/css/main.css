@@ -1304,3 +1304,21 @@ textarea, input {
     background-color: #DDD;
     border-color: #DDD;
 } */
+
+.messagePopUp{display: none;background-color: #fff;border-radius: 4px;padding: 20px;width: 330px;position: absolute;top: 50px;text-align: center;margin: 0 auto; height: 280px;}
+.messagePopUp .top{width: 85px;height: 85px;background-color: #fff;position: absolute;top: -42px;border-radius: 100%;-webkit-border-radius: 190px;left: 50%;margin-left: -42px;}
+.messagePopUp .top i{background: url('../images/icon.png')no-repeat 0 -82px;width: 60px;height: 60px;display: inline-block;position: relative;top: 10px;}
+.messagePopUp h2{font-size: 30px;color: #519d14;margin-top: 25px;}
+.messagePopUp p{font-size: 15px;color: #5d5d5d;padding: 30px 0px;line-height: 20px;}
+.messagePopUp .btn{padding: 12px;background-color: #68b32c;color: #fff;font-size: 13px;}
+.messagePopUp .btn:hover{background-color: #599a26;}
+
+.messagePopUp.error .top i{background-position: -64px -82px;}
+.messagePopUp.error h2{color:#eb2e2e;}
+.messagePopUp.error .btn{background-color:#eb2e2e;}
+.messagePopUp.error .btn:hover{background-color: #d22929;}
+
+.messagePopUp.alert .top i{background-position: -133px -82px;}
+.messagePopUp.alert h2{color:#ff9600;}
+.messagePopUp.alert .btn{background-color:#ff9600;}
+.messagePopUp.alert .btn:hover{background-color: #e68700;}
