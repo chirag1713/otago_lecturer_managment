@@ -49,7 +49,7 @@ public class AuthController {
         }
         Map<String, Object> dataMap = jsonUtil.fromJson(data, Map.class);
         String responseStr;
-        OtagoResponse aisResponse = new OtagoResponse();
+        OtagoResponse otagoResponse = new OtagoResponse();
         String sessionId = commonUtil.getSessionId(request);
         try {
             String mobile = (String) dataMap.get("mobile");
@@ -97,13 +97,15 @@ public class AuthController {
             //put userId in authObj as signUp done
             applicationCache.putSessionValue(sessionId, ApplicationCache.KEY_SESSION_USER, user);
 
-            aisResponse.setSTATUS(OtagoResponse.STATUS_SUCCESS);
-            aisResponse.setDATA(user);
-            aisResponse.setMESSAGE("Sign-up successfully done.");
+            otagoResponse.setSTATUS(OtagoResponse.STATUS_SUCCESS);
+            otagoResponse.setDATA(user);
+            otagoResponse.setMESSAGE("Sign-up successfully done.");
         } catch (Exception ex) {
+            otagoResponse.setSTATUS(OtagoResponse.STATUS_ERROR);
+            otagoResponse.setMESSAGE(ex.getMessage());
             logger.error("Exception in auth-page", ex);
         } finally {
-            responseStr = jsonUtil.toJson(aisResponse);
+            responseStr = jsonUtil.toJson(otagoResponse);
             if (logger.isDebugEnabled()) {
                 logger.debug("response : " + response);
             }
@@ -117,7 +119,7 @@ public class AuthController {
         if (logger.isDebugEnabled()) {
             logger.debug("login-doLogin, emailId:" + email);
         }
-        OtagoResponse aisResponse = new OtagoResponse();
+        OtagoResponse otagoResponse = new OtagoResponse();
 
         String response = null;
         String sessionId = commonUtil.getSessionId(request);
@@ -129,14 +131,16 @@ public class AuthController {
                 throw new Exception("Invalid password.");
             }
             User user = authValidationUtill.checkUser(sessionId, email, password);
-            aisResponse.setSTATUS(OtagoResponse.STATUS_SUCCESS);
-            aisResponse.setDATA(user);
-            aisResponse.setMESSAGE("successfully");
+            otagoResponse.setSTATUS(OtagoResponse.STATUS_SUCCESS);
+            otagoResponse.setDATA(user);
+            otagoResponse.setMESSAGE("successfully");
             applicationCache.putSessionValue(sessionId, ApplicationCache.KEY_SESSION_USER, user);
         } catch (Exception ex) {
+            otagoResponse.setSTATUS(OtagoResponse.STATUS_ERROR);
+            otagoResponse.setMESSAGE(ex.getMessage());
             logger.error(ex.getMessage(), ex);
         } finally {
-            response = jsonUtil.toJson(aisResponse);
+            response = jsonUtil.toJson(otagoResponse);
 
             if (logger.isDebugEnabled()) {
                 logger.debug("response : " + response);
@@ -148,7 +152,7 @@ public class AuthController {
     @RequestMapping("/logout")
     @ResponseBody
     public String logOut(HttpServletRequest request) {
-        OtagoResponse aisResponse = new OtagoResponse();
+        OtagoResponse otagoResponse = new OtagoResponse();
         String response;
         try {
             String sessionId = commonUtil.getSessionId(request);
@@ -157,12 +161,14 @@ public class AuthController {
             if (logger.isDebugEnabled()) {
                 logger.debug("Logout, jedisSessionMap:" + jedisSessionMap);
             }
-            aisResponse.setSTATUS(OtagoResponse.STATUS_SUCCESS);
-            aisResponse.setMESSAGE("Logout successfull");
+            otagoResponse.setSTATUS(OtagoResponse.STATUS_SUCCESS);
+            otagoResponse.setMESSAGE("Logout successfull");
         } catch (Exception ex) {
+            otagoResponse.setSTATUS(OtagoResponse.STATUS_ERROR);
+            otagoResponse.setMESSAGE(ex.getMessage());
             logger.error(ex.getMessage(), ex);
         } finally {
-            response = jsonUtil.toJson(aisResponse);
+            response = jsonUtil.toJson(otagoResponse);
         }
         return response;
     }
