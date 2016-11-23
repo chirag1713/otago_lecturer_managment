@@ -108,7 +108,18 @@
                             </a>
                         </div> <!-- /.logo -->
                     </div> <!-- /.col-md-4 -->
-                    <div class="col-md-3 col-md-offset-5 header-left" style="margin-top: 55px">
+                    <div class="col-md-3 col-md-offset-5 header-left" style="margin-top: 25px;text-align: right;">                      
+                         <div class="dropdown">
+                         	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                             <strong data-username="">ROO</strong> <span class="caret"></span>
+                         </a>
+                         <ul class="dropdown-menu" style="left: 80px;">
+                             <li data-id="pm"><a href="${pageContext.request.contextPath}/profile">MY PROFILE</a></li>
+                             <li data-id="pm"><a href="${pageContext.request.contextPath}/myorder">MY ORDER</a></li>
+                             <li data-id="pm"><a href="${pageContext.request.contextPath}/changepassword">CHANGE PASSWORD</a></li>
+                             <li data-id="pm"><a href="javascript:void(0)" onclick="onLogoutClick()">LOG OUT</a></li>
+                         </ul>
+                         </div>                         
                         <p><i class="fa fa-phone"></i> +01 2334 853</p>
                         <p><i class="fa fa-envelope"></i> <a href="mailto:email@universe.com">email@universe.com</a></p>
                     </div> <!-- /.header-left -->
