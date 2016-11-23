@@ -1,6 +1,29 @@
 /**
  * 
  */
+
+function msgPopup(msg, type, timeout) {
+    var $pop_up = $("#msg_pop_up");
+    $pop_up.removeClass("alert error");
+    $("p", $pop_up).html(msg);
+    $("h2", $pop_up).html("Success");
+    if (type && type == 1) {
+        $pop_up.addClass("alert");
+        $("h2", $pop_up).html("Alert");
+    } else if (type && type == 2) {
+        $pop_up.addClass("error");
+        $("h2", $pop_up).html("Error");
+    }
+
+    $pop_up.modal();
+
+    if (timeout) {
+        setTimeout(function() {
+            $(".btn", $pop_up).trigger("click");
+        }, timeout);
+    }
+}
+
 function initLogin() {
 	alert("dffffff");
 	var $loginform = $("#loginform");
@@ -37,9 +60,10 @@ function initLogin() {
 			// AFRO.ResetBlockConcurrentReq(0);
 			// oLoadingDiv.hide();
 			if (res.STATUS !== 1) {
-				alert(res.MESSAGE);
+			msgPopup(res.MESSAGE, 2);
 				return;
 			}
+			//msgPopup(res.MESSAGE);
 			window.location.href = baseUrl + "course";
 		});
 	}
